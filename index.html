@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> ToDo List </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <template>
+      <li>
+        <input type="checkbox"><p></p><input type="number" value='1' min="1" max="10">
+			  <input class="hide">
+			  <button class="editTask">Ред.</button>
+			  <button class="deleteTask">Удалить</button>
+      </li>
+    </template>
+    <div class = "opac"> <!-- для фона -->
+       <section class = "mainContent">
+       <div id="addTask">
+         <input id="task" type="text" required placeholder="Введите новое задание">
+         <input id="add" type="submit" value="Добавить">
+       </div>
+       <ul id="holder"></ul>
+       </section>
+    </div> <!-- для фона -->
+  </body>
+</html>
